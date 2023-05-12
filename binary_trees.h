@@ -1,9 +1,11 @@
-#ifndef BINTREE.H
-#define BINTREE.H
+#ifndef BINTREE_H
+#define BINTREE_H
 
 /* Libraries*/
 #include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
+#include <string.h>
 
 /* Basic Binary tree */
 
@@ -27,5 +29,5 @@ typedef struct binary_tree_s binary_tree_t;
 
 /* Prototypes */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
-
+void binary_tree_print(const binary_tree_t *tree);
 #endif
